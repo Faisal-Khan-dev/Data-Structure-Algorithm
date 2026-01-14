@@ -3,26 +3,26 @@ using namespace std;
 
 // Single Liear Search!
 
-// int main() {
+int main() {
     
-//     int i = 0;
-//     int toSearch;
-//     cout<<"Enter your Number: ";
-//     cin>>toSearch;
+    int i = 0;
+    int toSearch;
+    cout<<"Enter your Number: ";
+    cin>>toSearch;
     
-//     int arr[10] = {12, 14, 56, 89, 90, 52, 16, 78, 79, 15};
+    int arr[10] = {12, 14, 56, 89, 90, 52, 16, 78, 79, 15};
      
-//      for(i; i < 10; i++){
-//          if(toSearch == arr[i]){
-//              cout<<"Value found at indxex: "<<i;
-//              break;
-//          }
-//      }
-//      if(i == 10){
-//          cout<<"Value not found";
-//      }
+     for(i; i < 10; i++){
+         if(toSearch == arr[i]){
+             cout<<"Value found at indxex: "<<i;
+             break;
+         }
+     }
+     if(i == 10){
+         cout<<"Value not found";
+     }
     
-// }
+}
 
 
 // Multiple linear search!
