@@ -295,3 +295,151 @@ using namespace std;
  
     
 // }
+
+
+// Double Linked List!
+
+
+
+// struct DLL_Node{
+//     int data;
+//     DLL_Node *next;
+//     DLL_Node *prev;
+// };
+
+// DLL_Node *list = NULL;
+
+// void insert(int value){
+
+//     DLL_Node *temp; 
+//     temp = (DLL_Node*) malloc(sizeof(DLL_Node));
+
+//     temp->data = value;
+//     temp->next = NULL;
+//     temp->prev = NULL;
+
+//     if (list == NULL){
+//         list = temp;
+//     }else{
+//         DLL_Node *cur = list;
+
+//         while (cur-> next != NULL)
+//         {
+//             cur = cur->next;
+//         }
+//         cur->next = temp;
+//         temp->prev = cur;
+//     } 
+// }
+
+// void display(){
+//      if(list == NULL){ 
+//         cout << "The List is empty!" << endl;
+//         return;
+//     }
+//     DLL_Node *cur = list; 
+//     cout << "List: ";
+//     while (cur != NULL){
+//         cout << cur->data << " ";
+//         cur = cur->next;
+//     }
+//     cout << endl;
+    
+// }
+
+// void search(int toSearch){
+//     if(list == NULL){ 
+//         cout << "The List is empty!" << endl;
+//         return;
+//     }
+//     bool found = false;
+//     DLL_Node *cur = list; 
+//      while (cur != NULL){
+//         if(cur-> data == toSearch){
+//             cout << "value found!" << endl;
+//             found = true;
+//             break;
+//         }
+//         cur = cur->next;
+//     }
+//     if(!found){
+//         cout<<"Value not found!" << endl;
+//     }
+// }
+// void del(int value){
+//     if(list == NULL){ 
+//         cout << "The List is empty!" << endl;
+//         return;
+//     }
+//     DLL_Node * cur = list;
+//     if(value == list -> data){
+//         list = list -> next;
+//         list -> prev = NULL;
+//         free(cur);
+//         return;
+//     }
+//     DLL_Node * prev = list;
+//     cur = list -> next;
+//     bool found = false;
+//    while(cur != NULL){
+//     if(cur->data == value){
+//         cur->prev->next = cur->next;
+//         if(cur->next != NULL)
+//             cur->next->prev = cur->prev;
+//         free(cur);
+//         found = true;
+//         return;
+//     }
+//     cur = cur->next;
+// }
+
+//     if(!found){
+//         cout << "Value not found!" << endl;
+//     }
+     
+    
+    
+// }
+
+// int main() {
+
+//     int ch;
+//         cout << "Press 1 for insert" << endl << "Press 2 for search!" << endl << "Press 3 for dislay!" << endl  << "Press 4 for delete" << endl  << "Press 5 for exit" << endl;
+//     while (true){
+       
+//     cin >> ch;
+        
+//     if (ch == 1)
+//     {
+//         int value;
+//         cout << "Enter a value u want to insert!" << endl;
+//         cin >> value;
+//         insert(value);
+//     }
+//       if (ch == 2)
+//     {
+//         int value;
+//         cout << "Enter a value u want to search" << endl;
+//         cin >> value;
+//         search(value);
+//     }
+//     if (ch == 3){
+         
+//         display();
+//     }
+//     if(ch == 4){
+//         int value;
+//         cout << "Enter a value u want to delete" << endl;
+//         cin >> value;
+//         del(value);
+//     }
+//     if(ch == 5){
+//         break;
+//     }
+    
+//     cout << "Press number to execute function!" << endl;
+        
+//     }
+ 
+    
+// }
