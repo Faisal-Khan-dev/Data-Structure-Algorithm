@@ -443,3 +443,124 @@ using namespace std;
  
     
 // }
+
+
+// Multi Linked List!
+
+
+// struct SNode{
+//     int SNo;
+//     SNode * SNext;
+// };
+
+// struct CNode{
+//     int CNo;
+//      CNode * CNext;
+//      SNode * Std_List;
+// };
+
+// CNode* CList = NULL;
+
+// void Add_Course(int val){
+    
+//     CNode* temp = (CNode*)malloc(sizeof(CNode));
+//     temp -> CNo = val;
+//     temp -> CNext = NULL;
+//     temp -> Std_List = NULL;
+    
+//     if(CList == NULL){
+//         CList = temp ;
+//         return;
+//     }else{
+//         CNode * Ccur = CList;
+//         while(Ccur -> CNext != NULL){
+//             Ccur = Ccur -> CNext;
+//         }
+//         Ccur -> CNext = temp;
+//     }
+// }
+
+// void Add_Std(int C_No, int S_No){
+//     CNode * Ccur = CList;
+//     while(Ccur != NULL){
+//             SNode * temp;
+//         if(C_No == Ccur -> CNo){
+//             temp = (SNode*)malloc(sizeof(SNode));
+//             temp -> SNo = S_No;
+//             temp -> SNext = NULL;
+        
+        
+//         if(Ccur -> Std_List == NULL){
+//             Ccur -> Std_List = temp;
+//         }else{
+//             SNode * Scur = Ccur -> Std_List;
+//             while(Scur -> SNext != NULL){
+//                 Scur = Scur -> SNext;
+//             }
+//                 Scur -> SNext = temp;
+//         }
+//         return;
+//     }
+//         Ccur = Ccur->CNext;
+// }
+//         if(Ccur == NULL){
+        
+//         cout << "Course not found!" << endl;
+//     }
+// }
+
+// void Display_All(){
+//     CNode * Ccur = CList;
+    
+//     if(Ccur == NULL){
+//         cout << "The List is Empty";
+//         return;
+//     }
+    
+//     while(Ccur != NULL){
+//         cout << "Course: " << Ccur -> CNo << " " << "Students: ";
+//         SNode* Scur = Ccur -> Std_List;
+//         while(Scur != NULL){
+//             cout << Scur -> SNo << " ";
+//             Scur = Scur -> SNext;
+//         }
+        
+//         cout << "Null" << endl;
+//         Ccur = Ccur -> CNext;
+//     }
+// }
+
+// int main() {
+    
+//     int ch;
+//     int value;
+    
+//     cout << "Press 1 to Add Course!" << endl << "Press 2 to Add Student!"<< endl << "Press 3 to Display All!" << endl << "Press 4 to Exit!"<< endl; 
+    
+//     while(true){
+//         cin >> ch;
+//         if(ch == 1){
+//             cout << "Enter course no u want to insert!" << endl;
+//             cin >> value;
+//             Add_Course(value);
+//         }
+//         if(ch == 2){
+//             cout << "Enter Course No & Student Seat No for Enrolment!" << endl;
+//            int C_No;
+//            int S_No;
+//             cin >> C_No >> S_No;
+//             Add_Std(C_No , S_No);
+//         }
+//         if(ch == 3){
+//             Display_All();
+//         }
+//         if(ch == 4){
+//             break;
+//         }
+        
+//         cout << "Press Number to execute function!" << endl;
+        
+//     }
+  
+//     return 0;
+// }
