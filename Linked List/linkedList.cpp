@@ -530,31 +530,78 @@ using namespace std;
 //     }
 // }
 
+// void Search_Course(int C_No){
+//      if(CList == NULL){ 
+//         cout << "The List is empty!" << endl;
+//         return;
+//      }
+     
+//      bool found = false;
+//     CNode *Ccur = CList; 
+//      while (Ccur != NULL){
+//         if(Ccur-> CNo == C_No){
+//             cout << "course found!" << endl;
+//             found = true;
+//             break;
+//         }
+//         Ccur = Ccur->CNext;
+//     }
+//     if(!found){
+//         cout<<"course not found!" << endl;
+//     }
+// }
+// void Update_Course(int C_No, int Upd_CNo){
+//      if(CList == NULL){ 
+//         cout << "The List is empty!" << endl;
+//         return;
+//      }
+     
+//     CNode *Ccur = CList; 
+//      while (Ccur != NULL){
+//         if(Ccur-> CNo == C_No){
+//             Ccur-> CNo = Upd_CNo;
+//             break;
+//         }
+//         Ccur = Ccur->CNext;
+//     }
+// }
+
 // int main() {
     
 //     int ch;
-//     int value;
+//     int C_No;
+//     int S_No;
     
-//     cout << "Press 1 to Add Course!" << endl << "Press 2 to Add Student!"<< endl << "Press 3 to Display All!" << endl << "Press 4 to Exit!"<< endl; 
+//     cout << "Press 1 to Add Course!" << endl << "Press 2 to Add Student!"<< endl << "Press 3 to Display All!" << endl << "Press 4 to Search enrolled course!" << endl << "Press 5 to Update course!" << endl << "Press 6 to Exit!"<< endl; 
     
 //     while(true){
 //         cin >> ch;
 //         if(ch == 1){
 //             cout << "Enter course no u want to insert!" << endl;
-//             cin >> value;
-//             Add_Course(value);
+//             cin >> C_No;
+//             Add_Course(C_No);
 //         }
 //         if(ch == 2){
 //             cout << "Enter Course No & Student Seat No for Enrolment!" << endl;
-//            int C_No;
-//            int S_No;
+            
 //             cin >> C_No >> S_No;
 //             Add_Std(C_No , S_No);
 //         }
 //         if(ch == 3){
 //             Display_All();
 //         }
-//         if(ch == 4){
+//          if(ch == 4){
+//             cout << "Enter course no u want to Search!" << endl;
+//             cin >> C_No;
+//             Search_Course(C_No);
+//         }
+//          if(ch == 5){
+//             cout << "Enter Course No & Updated Course No for Updation!" << endl;
+//             int Upd_CNo;
+//             cin >> C_No >> Upd_CNo;
+//             Update_Course(C_No , Upd_CNo);
+//         }
+//         if(ch == 6){
 //             break;
 //         }
         
