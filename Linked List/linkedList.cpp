@@ -513,7 +513,7 @@ using namespace std;
 //     CNode * Ccur = CList;
     
 //     if(Ccur == NULL){
-//         cout << "The List is Empty";
+//         cout << "The List is Empty!" << endl;
 //         return;
 //     }
     
@@ -566,13 +566,108 @@ using namespace std;
 //     }
 // }
 
+// void Del_Course(int C_No){
+//      if(CList == NULL){ 
+//         cout << "The List is empty!" << endl;
+//         return;
+//      }
+     
+//      CNode *Ccur = CList;
+    
+//      if(C_No == CList -> CNo){
+//           SNode *Scur = Ccur->Std_List;
+          
+//         while(Scur != NULL){
+//             SNode* temp = Scur;
+//             Scur = Scur->SNext;
+//             free(temp);
+//     }
+//          CList = CList -> CNext;
+//          free(Ccur);
+//          return;
+//      }
+     
+//      CNode *prev = CList;
+//      Ccur = CList -> CNext;
+//      bool found = false;
+//      while(Ccur != NULL){
+//          if(C_No == Ccur -> CNo){
+//               SNode *Scur = Ccur->Std_List;
+              
+//               while(Scur != NULL){
+//             SNode* temp = Scur;
+//             Scur = Scur->SNext;
+//             free(temp);
+//     }
+//              prev -> CNext = Ccur -> CNext;
+//              free(Ccur);
+//              found = true;
+//              return;
+//          }
+//          Ccur = Ccur -> CNext;
+//          prev = prev -> CNext;
+//      }
+//      if(!found){
+//          cout << "Course not found!" << endl;
+//      }
+// }
+
+// void Del_Course_Std(int C_No, int S_No){
+    
+//     if(CList == NULL){ 
+//         cout << "The List is empty!" << endl;
+//         return;
+//      }
+     
+//       CNode *Ccur = CList;
+//       bool found = false;
+      
+//       while(Ccur != NULL){
+          
+//           if(Ccur -> CNo == C_No){
+              
+//                SNode *Scur = Ccur->Std_List;
+//                  SNode *prev = NULL;
+                 
+//                while(Scur != NULL){
+//                     // SNode* temp = Scur;
+                    
+//                    if(Scur -> SNo == S_No){
+                   
+//                         found = true;
+//                         if(prev == NULL){
+//                             Ccur->Std_List = Scur->SNext;
+//                             free(Scur);
+//                             return;
+//                         }  
+                        
+//                         if(prev != NULL){
+//                             prev->SNext = Scur->SNext;
+//                             free(Scur);
+//                            return;
+//                         }
+//                    }
+//                     prev = Scur;
+//                     Scur = Scur->SNext;
+//                 }
+//           }
+//           Ccur = Ccur -> CNext;
+//       }
+      
+//        if(!found){
+//          cout << "Student not found in the course!" << endl;
+//      }
+     
+     
+// }
+
 // int main() {
     
 //     int ch;
 //     int C_No;
 //     int S_No;
     
-//     cout << "Press 1 to Add Course!" << endl << "Press 2 to Add Student!"<< endl << "Press 3 to Display All!" << endl << "Press 4 to Search enrolled course!" << endl << "Press 5 to Update course!" << endl << "Press 6 to Exit!"<< endl; 
+//     cout << "Press 1 to Add Course!" << endl << "Press 2 to Add Student!"<< endl << "Press 3 to Display All!" << endl << "Press 4 to Search enrolled course!" << endl << "Press 5 to Update course!" << endl << "Press 6 to Delete course!"<< endl << "Press 7 to Delete Student from the course!" << endl << "Press 8 to Exit!"<< endl; 
     
 //     while(true){
 //         cin >> ch;
@@ -602,6 +697,17 @@ using namespace std;
 //             Update_Course(C_No , Upd_CNo);
 //         }
 //         if(ch == 6){
+//             cout << "Enter course no u want to delete!" << endl;
+//             cin >> C_No;
+//             Del_Course(C_No);
+//         }
+//         if(ch == 7){
+//             cout << "Enter Course No & Student Seat No to delete student from the course!" << endl;
+//             int S_No;
+//             cin >> C_No >> S_No;
+//             Del_Course_Std(C_No , S_No);
+//         }
+//         if(ch == 8){
 //             break;
 //         }
         
