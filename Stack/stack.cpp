@@ -1,7 +1,8 @@
-// Stack with fix Array!
-
 #include <iostream>
 using namespace std;
+
+// Stack with fix Array!
+
 
 const int capacity = 10;
 int arr[capacity];
