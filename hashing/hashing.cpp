@@ -22,6 +22,25 @@ using namespace std;
 //     cout << value << " inserted at index " << index << endl;
 // }
 
+// void search(int value) {
+//     int index = value % SIZE;
+//     int startIndex = index;
+
+//     while (hashTable[index] != -1) {
+        
+//         if (hashTable[index] == value) {
+//             cout << value << " found at index " << index << endl;
+//             return;
+//         }
+        
+//         index = (index + 1) % SIZE;
+
+//         if (index == startIndex)
+//             break;
+//     }
+//     cout << value << " not found!" << endl;
+// }
+
 // void display() {
 //     for(int i = 0; i < SIZE; i++) {
 //         if(hashTable[i] == -1)
@@ -34,7 +53,7 @@ using namespace std;
 // int main() {
 //     init();
 
-//          cout << "Press 1 to insert value! \nPress 2 to display values! \nPress 3 for exit \n";
+//          cout << "Press 1 to insert value! \nPress 2 to search value! \nPress 3 to display values! \nPress 4 for exit \n";
     
 //     int ch;
 //     int value;
@@ -46,9 +65,14 @@ using namespace std;
 //             insert(value);
 //         }
 //         if(ch == 2){
-//             display();
+//             cout << "Enter value u want to search! \n";
+//             cin >> value;
+//             search(value);
 //         }
 //         if(ch == 3){
+//             display();
+//         }
+//         if(ch == 4){
 //             break;
 //         }
 //         cout << "insert number to execute function! \n";
