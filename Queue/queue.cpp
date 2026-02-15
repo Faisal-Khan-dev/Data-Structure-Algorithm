@@ -40,7 +40,6 @@ using namespace std;
 //              rear = NULL;
 //          }
 //     }
-//     return 0;
 // }
 
 // int main() {
@@ -64,7 +63,6 @@ using namespace std;
 //         }
 //         cout << "insert number to execute function! \n";
 //     }
-//     return 0;
 // }
 
 
@@ -129,5 +127,4 @@ using namespace std;
 //         }
 //         cout << "insert number to execute function! \n";
 //     }
-//     return 0;
 // }
