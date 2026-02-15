@@ -61,4 +61,82 @@ using namespace std;
 // }
     
 
+// struct Node{
+//     int data;
+//     Node*next;
+// };
 
+// Node * top = NULL;
+
+// void push(int n){
+//     Node* temp = (Node*)malloc(sizeof(Node));
+//     temp->data = n;
+//     temp->next = top;
+//     top = temp;
+// }
+
+
+// void display(){
+//     if(top == NULL){
+//         cout << "Stack is Empty!" << endl;
+//         return;
+//     }
+
+//     Node* temp = top;
+//     cout << "Stack Elements: ";
+//     while(temp != NULL){
+//         cout << temp->data << " ";
+//         temp = temp->next;
+//     }
+//     cout << endl;
+// }
+
+
+// int pop(){
+//     if(top == NULL){
+//         cout << "Stack is Empty!" << endl;
+//         return -1;
+//     }
+
+//     Node* temp = top;
+//     int poppedValue = top->data;
+//     top = top->next;
+//     free(temp);
+
+//     cout << "Popped Value: " << poppedValue << endl;
+//     return poppedValue;
+// }
+
+
+
+
+// int main() {
+   
+//     int ch;
+//     int value;
+   
+//     cout << "Press 1 to Push Value!" << endl << "Press 2 to Pop Value!"<< endl << "press 3 to Exit!" << endl;
+   
+//     while(true){
+//         cin >> ch;
+//         if(ch == 1){
+//             cout << "Enter Number u want to push!" << endl;
+//             cin >> value;
+//             push(value);
+//         }
+//         if(ch == 2){
+//             pop();
+//         }
+//         if(ch == 3){
+//             display();
+//         }
+       
+//         if(ch == 4){
+//             break;
+//         }
+       
+//         cout << "Press Number to execute function!" << endl;
+       
+//     }
+ 
+// }
