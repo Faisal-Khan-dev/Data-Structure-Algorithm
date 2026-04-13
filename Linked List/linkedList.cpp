@@ -224,7 +224,7 @@ using namespace std;
        
 //         list = cur -> next;
 
-//                 while(temp != list){
+//                 while(temp != cur){
 //                     temp  = temp -> next;
 //              }
 //                 temp -> next = list;
